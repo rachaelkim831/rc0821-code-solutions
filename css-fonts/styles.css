@@ -1,0 +1,8 @@
+body > h1, h2 {
+  font-family: 'Style Script', cursive;
+}
+
+body > p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
