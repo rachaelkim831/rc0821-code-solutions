@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.img-container {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+}
+
+img {
+  flex-basis: 20%;
+  width: 150px;
+}
+
+.text-container {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1000px;
+}
+
+.row {
+  flex-basis: 20%;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.light-gray {
+  color: lightgray;
+}
+
+.light-pink {
+  background-color: rgb(253, 223, 227);
+}
