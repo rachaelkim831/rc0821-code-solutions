@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+  margin-top: 250px;
+  font-family: 'Mirza', cursive;
+}
+
+.limegreen {
+  color: limegreen;
+}
+
+.red {
+  color: red;
+}
+
+span {
+  padding: 3px;
+}
+
+.blackBorder {
+  border-bottom: 4px solid black;
+}
+
+.redBorder {
+  border-bottom: 4px solid red;
+}
