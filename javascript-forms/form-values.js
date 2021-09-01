@@ -1,9 +1,9 @@
 var $submit = document.getElementById('contact-form');
 function logSubmit(event) {
   event.preventDefault();
-  var $name = $submit.elements[0];
-  var $email = $submit.elements[1];
-  var $text = $submit.elements[2];
+  var $name = $submit.elements.name.value;
+  var $email = $submit.elements.name.email;
+  var $text = $submit.elements.name.text;
   var $newobject = {
     name: $name,
     email: $email,
