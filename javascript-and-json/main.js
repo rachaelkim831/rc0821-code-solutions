@@ -20,14 +20,8 @@ console.log('typeof booksArray:', typeof booksArray);
 console.log('JSON.stringify:', JSON.stringify(booksArray));
 console.log('typeof JSON.stringify:', typeof JSON.stringify(booksArray));
 
-var string = {
-  student: {
-    'number id': '083191',
-    'string name': 'Rachael Kim'
-  }
-};
+var string = '{"number id": "083191", "string name": "Rachael Kim"}';
+console.log('string:', string);
+console.log('typeof string:', typeof string);
 
-var jsonstring = JSON.stringify(string);
-
-console.log('string:', jsonstring, 'typeof string:', typeof JSON.stringify(jsonstring));
-console.log('JSON.parse:', JSON.parse(jsonstring), 'typeof JSON.parse:', typeof JSON.parse(jsonstring));
+console.log('JSON.parse:', JSON.parse(string), 'typeof JSON.parse:', typeof JSON.parse(string));
