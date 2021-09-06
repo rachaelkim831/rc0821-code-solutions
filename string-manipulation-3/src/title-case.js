@@ -1,0 +1,14 @@
+/* exported titleCase */
+function titleCase(title) {
+  title = title.toLowerCase().split(' ');
+  for (let i = 0; i < title.length; i++) {
+    title[i] = title[i].charAt(0).toUpperCase() + title[i].slice(1);
+    if (title[i].toLowerCase().includes('javascript')) {
+      title[i] = 'JavaScript';
+    }
+    if (title[i].toLowerCase().includes('api')) {
+      title[i] = 'API';
+    }
+  }
+  return title.join(' ');
+}
