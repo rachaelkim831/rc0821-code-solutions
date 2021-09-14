@@ -1,0 +1,43 @@
+h1 {
+  margin-left: 25%;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-one-third {
+  flex-basis: 33%;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.image {
+  max-width: 100%;
+}

@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.open {
+  background-color: rgb(94, 69, 240);
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 2px 1px 1px rgb(58, 57, 57);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+}
+
+.content {
+  background-color: white;
+  border-radius: 4px;
+  width: 450px;
+  padding: 40px;
+  margin: 300px auto;
+  border: 1px solid rgba(136, 136, 136, 0.39);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.no {
+  padding: 10px 30px;
+  color: white;
+  background-color: tomato;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px darkgray;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.no:focus {
+  cursor: pointer;
+}
