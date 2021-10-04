@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  background-color: rgba(250, 242, 232, 0.993);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+span {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 243, 109, 0.993);
+  display: inline;
+  box-shadow:
+    inset 6px 8px 1px 1px rgb(255, 239, 19),
+    5px 1px 1px 1px rgb(251, 239, 63);
+}
+
+.Darkcircle {
+  background-color: #4f4f4f;
+  box-shadow: inset 8px 10px 6px 5px black;
+}
+
+.circleDiv {
+  background-color: #0d0d0d;
+}
+
+.background {
+  background-color: #0d0d0d;
+}
