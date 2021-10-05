@@ -1,0 +1,89 @@
+    1  ls
+    2  ls -la
+    3  cd repos
+    4  ls
+    5  git config --global user.name "rachael kim"
+    6  git config --global user.email "rachaelkim831@gmail.com"
+    7  git config user.name
+    8  git config --global --list
+    9  uname -r
+   10  apt install httpie
+   11  su root
+   12  whoami
+   13  sudo passwd root
+   14  su root
+   15  man
+   16  cd command-line-basics/
+   17  ls
+   18  pwd
+   19  man man 
+   20  man cat
+   21  cat laziness.txt
+   22  ls
+   23  cat impatience.txt
+   24  cat hubris.txt 
+   25  cat laziness.txt impatience.txt hubris.txt 
+   26  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   27  cat three-virtues.txt 
+   28  man ls
+   29  ls
+   30  ls -a
+   31  ls -F
+   32  ls lfz-staff/
+   33  ls -a lfz-staff/
+   34  ls -F lfz-staff/
+   35  ls -aF lfz-staff > lfz-staff/contents.txt
+   36  ls -F lfz-staff/
+   37  cat lfz-staff/contents.txt
+   38  man pwd
+   39  pwd
+   40  pwd > i-was-here.txt
+   41  ls
+   42  cat i-was-here.txt
+   43  man echo
+   44  echo Hello, World!
+   45  echo 'Hello, World!' > hello.txt
+   46  ls
+   47  cat hello.txt
+   48  man touch
+   49  touch tag-youre-it.txt
+   50  l
+   51  touch boop.txt
+   52  rm boop.txt
+   53  touch snoot/boop.txt
+   54  ls 
+   55  ls snoot/
+   56  man mkdir
+   57  mkdir parent
+   58  ls parent/
+   59  ls
+   60  mkdir -p parent/child/grandchild
+   61  ls
+   62  ls parent
+   63  ls child
+   64  ls parent/child
+   65  touch .gitkeep parent/child/grandchild
+   66  ls
+   67  ls parent
+   68  ls grandchild
+   69  ls parent/child
+   70  ls parent/child/grandchild
+   71  touch parent/child/grandchild/.gitkeep
+   72  ls parent/child/grandchild
+   73  ls -a  parent/child/grandchild 
+   74  man mv
+   75  mv pokiemans pokemon
+   76  ls
+   77  man rm
+   78  rm lol.txt
+   79  ls
+   80  rm parent
+   81  rm  -r kill-me/
+   82  ls
+   83  man cp
+   84  cp and-then.txt no-and-then.txt
+   85  ls 
+   86  cat and-then.txt no-and-then.txt
+   87  man history
+   88  history
+   89  history > command-history.txt
