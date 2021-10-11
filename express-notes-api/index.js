@@ -20,7 +20,7 @@ app.get('/api/notes/:id', (req, res) => {
   if (isNaN(req.params.id) || req.params.id < 0) {
     res.status(400).send({ error: 'id must be a positive integer' });
   }
-  if (req.params.id === undefined) {
+  if (req.params.id !== notes.id) {
     return res.status(404).send({ error: `cannot find note with id ${req.params.id}` });
   }
   for (const property in notes) {
