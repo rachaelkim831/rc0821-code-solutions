@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const data = require('./data.json');
+const fs = require('fs');
 
 app.use(express.json());
 
@@ -36,10 +37,15 @@ app.post('/api/notes', (req, res) => {
   const newNote = { id: data.nextId, ...req.body };
   data.notes = { ...data.notes, [data.nextId]: newNote };
   if (data.notes[newNote.id]) {
-    data.nextId++;
-    return res.status(201).send({ content: `${req.body.content}` });
+    fs.writeFile('./data.json', JSON.stringify(data), err => {
+      if (err) {
+        return res.status(500).send({ error: 'An unexpected error occurred.' });
+      } else {
+        data.nextId++;
+        return res.status(201).send(data.notes[newNote.id]);
+      }
+    });
   }
-  return res.status(500).send({ error: 'An unexpected error occurred.' });
 });
 
 // DELETE
@@ -54,10 +60,13 @@ app.delete('/api/notes/:id', (req, res) => {
   const notes = data.notes;
   if (notes[req.params.id]) {
     delete notes[req.params.id];
-    if (notes[req.params.id]) {
-      return res.status(500).send({ error: 'An unexpected error occurred.' });
-    }
-    return res.sendStatus(204);
+    fs.writeFile('./data.json', JSON.stringify(data), err => {
+      if (err) {
+        return res.status(500).send({ error: 'An unexpected error occurred.' });
+      } else {
+        return res.sendStatus(204);
+      }
+    });
   }
 });
 
@@ -76,10 +85,13 @@ app.put('/api/notes/:id', (req, res) => {
   const notes = data.notes;
   if (req.params.id) {
     notes[req.params.id].content = req.body.content;
-    return res.status(200).send({ content: 'The event loop, this, closures, and prototypal inheritance are special about JavaScript.', id: `${req.params.id}` });
-  }
-  if (notes[req.params.id].content !== req.body.content) {
-    return res.status(500).send({ error: 'An unexpected error occurred.' });
+    fs.writeFile('./data.json', JSON.stringify(data), err => {
+      if (err) {
+        return res.status(500).send({ error: 'An unexpected error occurred.' });
+      } else {
+        return res.status(200).send(data.notes[req.params.id]);
+      }
+    });
   }
 });
 
