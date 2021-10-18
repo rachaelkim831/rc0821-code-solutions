@@ -1,3 +1,4 @@
+
 select "line1",
        "cities"."name",
        "district"
