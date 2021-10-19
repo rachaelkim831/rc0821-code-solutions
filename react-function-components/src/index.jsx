@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 
 function CustomButton(props) {
   return (
-    <div>
-      <button>Click Me!</button>
-    </div>
+    <button>Click Me!</button>
   );
 }
 
