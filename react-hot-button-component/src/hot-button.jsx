@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class HotButton extends React.Component {
   constructor(props) {
@@ -16,7 +15,7 @@ class HotButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.increment} className={`button
+      <button onClick={this.increment} className={`button buttonShadow
       ${this.state.count >= 1 && this.state.count < 4 ? 'darkPurple' : null}
       ${this.state.count >= 4 && this.state.count < 7 ? 'lightPurple' : null}
       ${this.state.count >= 7 && this.state.count < 10 ? 'coral' : null}
@@ -29,10 +28,5 @@ class HotButton extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <HotButton />,
-  document.getElementById('root')
-);
 
 export default HotButton;

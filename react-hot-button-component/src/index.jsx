@@ -1,3 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import hotButton from './hot-button';
+import HotButton from './hot-button';
+
+ReactDOM.render(
+  <HotButton />,
+  document.getElementById('root')
+);

@@ -5,11 +5,12 @@
   font-family: 'Courier New', Courier, monospace;
   padding: 7px 10px;
   border: solid black 3px;
+  z-index: 0;
   transform: scale(1);
 }
 
 .buttonShadow {
-  box-shadow: inset 3px 5px;
+  box-shadow: 3px 5px;
   transform: scale(0.7);
   z-index: -1;
   position: absolute;
@@ -33,7 +34,7 @@
 }
 
 .orange {
-  background-color: rgb(230, 170, 130);
+  background-color: rgb(236, 141, 78);
   color: black;
 }
 
