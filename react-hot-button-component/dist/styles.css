@@ -1,0 +1,48 @@
+
+.button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 7px 10px;
+  border: solid black 3px;
+  transform: scale(1);
+}
+
+.buttonShadow {
+  box-shadow: inset 3px 5px;
+  transform: scale(0.7);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.darkPurple {
+  background-color: rgb(38, 5, 100);
+  color: white;
+}
+
+.lightPurple {
+  background-color: rgb(141, 98, 185);
+  color: white;
+}
+
+.coral {
+  background-color: rgb(238, 123, 123);
+  color: white;
+}
+
+.orange {
+  background-color: rgb(230, 170, 130);
+  color: black;
+}
+
+.yellow {
+  background-color: rgb(243, 239, 29);
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
