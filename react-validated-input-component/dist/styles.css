@@ -1,0 +1,21 @@
+
+.pwText {
+  margin-right: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.fa-check {
+  color: rgb(71, 184, 71);
+  margin-left: 10px;
+}
+
+.fa-times {
+  color: red;
+  margin-left: 10px;
+}
+
+.error {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.75rem;
+  color: red;
+}
