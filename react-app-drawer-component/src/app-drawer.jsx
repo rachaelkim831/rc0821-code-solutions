@@ -17,10 +17,10 @@ class AppDrawer extends React.Component {
     return (
       <div id="nav-container">
         <div onClick={this.toggle} className={`bg ${this.state.isOpen === true ? 'visible' : ''}`} ></div>
-        <button onClick={this.toggle} className="button" tabIndex="0">
+        <button onClick={this.toggle} className="button">
           <i className="fas fa-bars"></i>
         </button>
-        <div id="nav-content" className={this.state.isOpen === true ? 'visible' : ''} tabIndex="0">
+        <div id="nav-content" className={this.state.isOpen === true ? 'visible' : ''}>
           <h2>Menu</h2>
           <ul>
             <li onClick={this.toggle}><a href="#">About</a></li>
