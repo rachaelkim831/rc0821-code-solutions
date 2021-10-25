@@ -1,7 +1,6 @@
 import React from 'react';
 
 class Carousel extends React.Component {
-  // Setting up an object, interval should start even before user interacts with page
   constructor(props) {
     super(props);
     this.state = {
